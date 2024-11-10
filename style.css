@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(245, 0, 0);
+}
+
+@media only screen  and (max-width: 100px) {
+    body {
+      background-color: aqua;
+    }
+  }
+
+
+.container{
+    display: flex;
+}
+
+.container .item{
+    padding: 10px;
+    flex: 1;
+    background-color: aqua;
+    border: black solid  1px;
+}
+
+
+
+  @media  screen  and (max-width: 120px) {
+    .container{
+    flex-direction: column;
+    }
+  }
+
+
+  .grid-container .item{
+    padding: 10px;
+    flex: 1;
+    background-color: aqua;
+    border: black solid  1px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+}
+
+
+@media only screen  and (max-width: 100px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+  }
